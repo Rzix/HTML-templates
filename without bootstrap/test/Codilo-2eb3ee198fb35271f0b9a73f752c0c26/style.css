@@ -1,0 +1,95 @@
+/*                                                                                              
+                                                                                                                    
+                                                            dddddddd                                                
+        CCCCCCCCCCCCC                                       d::::::d       iiii       lllllll                       
+     CCC::::::::::::C                                       d::::::d      i::::i      l:::::l                       
+   CC:::::::::::::::C                                       d::::::d       iiii       l:::::l                       
+  C:::::CCCCCCCC::::C                                       d:::::d                   l:::::l                       
+ C:::::C       CCCCCC        ooooooooooo            ddddddddd:::::d      iiiiiii       l::::l         ooooooooooo   
+C:::::C                    oo:::::::::::oo        dd::::::::::::::d      i:::::i       l::::l       oo:::::::::::oo 
+C:::::C                   o:::::::::::::::o      d::::::::::::::::d       i::::i       l::::l      o:::::::::::::::o
+C:::::C                   o:::::ooooo:::::o     d:::::::ddddd:::::d       i::::i       l::::l      o:::::ooooo:::::o
+C:::::C                   o::::o     o::::o     d::::::d    d:::::d       i::::i       l::::l      o::::o     o::::o
+C:::::C                   o::::o     o::::o     d:::::d     d:::::d       i::::i       l::::l      o::::o     o::::o
+C:::::C                   o::::o     o::::o     d:::::d     d:::::d       i::::i       l::::l      o::::o     o::::o
+ C:::::C       CCCCCC     o::::o     o::::o     d:::::d     d:::::d       i::::i       l::::l      o::::o     o::::o
+  C:::::CCCCCCCC::::C     o:::::ooooo:::::o     d::::::ddddd::::::dd     i::::::i     l::::::l     o:::::ooooo:::::o
+   CC:::::::::::::::C     o:::::::::::::::o      d:::::::::::::::::d     i::::::i     l::::::l     o:::::::::::::::o
+     CCC::::::::::::C      oo:::::::::::oo        d:::::::::ddd::::d     i::::::i     l::::::l      oo:::::::::::oo 
+        CCCCCCCCCCCCC        ooooooooooo           ddddddddd   ddddd     iiiiiiii     llllllll        ooooooooooo
+*/
+
+:root {
+  --text: #2b3044;
+  --line: #bbc1e1;
+  --line-active: #275efe;
+}
+
+p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--text);
+}
+p a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 var(--spacing, 0px);
+  transition: margin 0.25s;
+  cursor: pointer;
+}
+p a svg {
+  width: 76px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+p a:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: 0.1s;
+  --offset: 180px;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Inter", Arial;
+  justify-content: center;
+  align-items: center;
+  background: #f6f8ff;
+}
+
+/* 
+   ____   U  ___ u  ____              _       U  ___ u 
+U /"___|   \/"_ \/ |  _"\    ___     |"|       \/"_ \/ 
+\| | u     | | | |/| | | |  |_"_|  U | | u     | | | | 
+ | |/__.-,_| |_| |U| |_| |\  | |    \| |/__.-,_| |_| | 
+  \____|\_)-\___/  |____/ uU/| |\u   |_____|\_)-\___/  
+ _// \\      \\     |||_.-,_|___|_,-.//  \\      \\    
+(__)(__)    (__)   (__)_)\_)-' '-(_/(_")("_)    (__)
+
+*/

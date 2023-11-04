@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url('../fonts/sans/Sans.eot') format('eot'),
+        url('../fonts/sans/Sans.svg') format('svg'),
+        url('../fonts/sans/Sans.ttf') format('ttf'),
+        url('../fonts/sans/Sans.woff') format('woff');
+}
+
+* {
+    font-family: 'IranSans';
+}
+
+.container {
+    width: 80%;
+}
+
+.navbar-brand img {
+    border-radius: 100%;
+    top: -6px;
+    position: relative;
+}
+
+.navbar {
+    border-bottom: 5px solid #ed1b34;
+    background-color: #fcedf3;
+}
+
+
+#myCarousel {
+    top: -20px;
+}
+
+ul.banners1 {
+    list-style-type: none;
+    margin: 0px 2%;
+}
+
+ul.banners1 li {
+    display: inline;
+    float: right;
+    width: 10%;
+    margin: 0px 2%;
+}
+
+ul.banners1 img {
+    width: 45%;
+}
+
+/*my*/
+ul.banners1 img:hover {
+    opacity: 0.6;
+}
+
+.banners1 a {
+    position: relative;
+    right: 20%;
+}
+
+/*Red Box*/
+.redBox {
+    background-color: #ef3c51;
+    width: 96%;
+    margin: 25px 2%;
+    border-radius: 15px;
+}
+
+.redBox .row>div:first-child img {
+    border-radius: 10px;
+    margin: 10%;
+}
+
+.redBox img {
+    width: 100%;
+}
+
+.card {
+    border: 1px solid white;
+    margin: 15px 0%;
+    background-color: white;
+    padding: 20px 12px 45px 2px;
+}
+
+.card img {
+    margin-bottom: 20px;
+}
+
+.discount {
+    background-color: #ef394e;
+    color: white;
+    padding: 0px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+span.price {
+    font-weight: bold;
+    float: left;
+    font-size: 14px;
+}
+
+.dprice {
+    color: gray;
+    float: left;
+    margin: 5px 0px 10px 20px;
+    font-size: 12px;
+}
+
+
+
+.offers {
+    margin: 15px 0%;
+}
+
+.offers img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h2.categories,
+h1 {
+    text-align: center;
+    margin: 3.5% 0;
+}
+
+.catItems,
+.suggestionItems {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.catItems img,
+.suggestionItems img {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.suggestionItems {
+    border: 1px solid #f2f2f3;
+    margin: 0 -15px;
+}
+
+.row2suggestion .suggestionItems {
+    border-top: 0;
+}
+
+.row2Categories {
+    margin-top: 2%;
+}
+
+.catproduct {
+    display: flex;
+    text-align: center;
+}
+
+.catproduct img {
+    width: 42%;
+}
+
+.catproduct span {
+    display: block;
+}
+
+.nImages img {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.h1suggestion {
+    font-size: xx-large;
+}
+
+
+
+.afterSuggestion {
+    margin-top: 12px;
+    border: #f4f4f4 solid 1px;
+}
+
+.digiPlus {
+    background-color: hsl(310, 69%, 34%);
+    margin-top: 20px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.digiplusLogo {
+    position: relative;
+    top: 20px;
+    right: 2%;
+}
+
+.digiplusLogo span {
+    display: block;
+    font-size: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.digiplusLogo button {
+    background-color: #941b80;
+    border: white solid 1px;
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+}
+
+.digiplusLogo img[src='assets/images/digiplus/Capture.JPG'] {
+    margin: 6% 20%;
+}
+
+.digiPlusItems {
+    background-color: white;
+    position: relative;
+    top: 3em;
+    right: 12%;
+    width: 69%;
+    padding-right: 7%;
+    border-radius: 10px;
+}
+
+.headDigiPlusItems {
+    width: 100%;
+}
+
+.headDigiPlusItems span,
+.headDigiPlusItems a {
+    width: 50%;
+}
+
+.headDigiPlusItems a {
+    position: relative;
+    right: 56%;
+}
+
+.photoDigiplus {
+    width: 100%;
+    margin-top: 5%;
+    margin-right: -5%;
+}
+
+.photoDigiplus img {
+    width: 100%;
+    margin: 5% 0%;
+}
+
+.popular {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid gainsboro;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.popularItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popularItems>div img {
+    width: 55%;
+}
+
+.AllItemsDigiClub {
+    position: relative;
+    top: 25px;
+}
+
+.digiClub {
+    background: linear-gradient(76.02deg, #35a6c8 33.32%, #007295 71.55%), radial-gradient(21.29% 87.33% at 50% 50.67%, #7cf2f6 0, #35a6c8 100%);
+    margin-top: 2%;
+    border-radius: 10px;
+    height: 95px;
+}
+
+.digiClubLogo {
+    width: 30%;
+}
+
+.digiClubImg {
+    width: 70%;
+}
+
+.digiClubImg img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Readings {
+    margin-top: 2%;
+}
+
+.topReadings span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.topReadings a {
+    float: left;
+}
+
+.ReadingsImg {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.ReadingsImg span {
+    position: relative;
+    top: 20px;
+}
+
+.ReadingsImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ReadingsImg>div {
+    height: 250px;
+    border: 1px solid #eaeaeb;
+    margin: 0% 1.5%;
+    border-radius: 10px;
+}
+
+.footer,
+.textFooter {
+    margin-top: 0.5%;
+}
+
+.topFooter button {
+    float: left;
+    color: #bbbcbf;
+    background-color: #ffffff;
+    border: 1px solid #bbbcbf;
+    border-radius: 5px;
+    padding: 1.5% 4%;
+    font-size: smaller;
+}
+
+.logosItems {
+    margin: 0 10%;
+    margin-top: 2%;
+}
+
+.logosItems>div {
+    margin: 0 0.7%;
+}
+
+.logos span {
+    text-align: center;
+    font-size: small;
+}
+
+.logos img {
+    display: block;
+    position: relative;
+    right: 20%;
+}
+
+.Links {
+    margin-top: 5%;
+}
+
+.LinksItems a {
+    display: block;
+    margin: 10% 0%;
+    color: #adb0b4;
+}
+
+#uniqH4,
+.inputsFooter {
+    width: 100%;
+    display: block;
+}
+
+#uniqH4 h4 {
+    font-size: small;
+}
+
+.inputsFooter input {
+    border-radius: 5px;
+    height: 30px;
+    background-color: #f0f0f1;
+    border: none;
+}
+
+.inputsFooter button {
+    border-radius: 5px;
+    height: 30px;
+    background-color: #e0e0e2;
+    color: white;
+    border: none;
+}
